@@ -19,8 +19,9 @@ export function Giorgi({ fatherName }) {
     )
 }
 
-export function Levan() {
-    return <>Levan</>
+export function Levan(props) {
+    const { age, hasCar } = props;
+    return <>Levan is {age} years old. Levan is { props.isStudent ? "Student" : "not Student" }</>
 }
 
 // statefull component - class component
@@ -30,7 +31,7 @@ class Anano extends Component {
     }
 
     render() {
-        return <React.Fragment>sd</React.Fragment>
+        return <React.Fragment>{this.props.children}</React.Fragment>
     }
 }
 

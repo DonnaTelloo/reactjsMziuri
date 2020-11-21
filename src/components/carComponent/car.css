@@ -1,0 +1,30 @@
+.carTemplate {
+    width: 100%;
+    height: 100%;
+    background-color: #dfe6e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+    .carTemplate .carInformation {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        width: 400px;
+        height: 100px;
+        background-color: #b1b7b985;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .carTemplate .carInformation span {
+
+        }
+    .carTemplate img {
+        width: 50%;
+    }
