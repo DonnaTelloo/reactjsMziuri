@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Anano, { Giorgi, Anastasia, Levan } from './components/Hello';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Giorgi fatherName="ნუგზარი" />
+        <br />
+      <Anastasia age={17} hasBrother={true} />
+        <br />
+      <Levan />
+        <br />
+      <Anano age={13} nationality="ქართველი">
+        <p>Hey brother !</p>
+        <p>Hey Sister !</p>
+      </Anano>
     </div>
   );
 }
